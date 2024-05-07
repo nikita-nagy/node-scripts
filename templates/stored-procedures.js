@@ -135,9 +135,9 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-	DECLARE @limitClause nvarchar(max) = [JFW].[fn_GetLimitClause](@Limit),
-            @offsetClause nvarchar(max) = [JFW].[fn_GetOffsetClause](@Page_Number, @Page_Size),
-            @orderByClause nvarchar(max) = [JFW].[fn_GetOrderByClause](@Sort_Data_Field, @Sort_Order),
+	DECLARE @limitClause nvarchar(max) = [${tableSchema}].[fn_GetLimitClause](@Limit),
+            @offsetClause nvarchar(max) = [${tableSchema}].[fn_GetOffsetClause](@Page_Number, @Page_Size),
+            @orderByClause nvarchar(max) = [${tableSchema}].[fn_GetOrderByClause](@Sort_Data_Field, @Sort_Order),
             @whereClause nvarchar(max) = CONCAT('1 = 1 '),
             @sqlCommand nvarchar(max) = '',
 
@@ -145,10 +145,10 @@ BEGIN
     {{FilterCriterias}}
 
     -- Sets common filter criteria
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteria]('Modified_By', @Modified_By))
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteriaByDateRange]('Modified_Date', @Modified_Date_From, @Modified_Date_To))
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteria]('Created_By', @Created_By))
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteriaByDateRange]('Created_Date', @Created_Date_From, @Created_Date_To))
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteria]('Modified_By', @Modified_By))
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteriaByDateRange]('Modified_Date', @Modified_Date_From, @Modified_Date_To))
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteria]('Created_By', @Created_By))
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteriaByDateRange]('Created_Date', @Created_Date_From, @Created_Date_To))
 
     -- Sets the SQL statement
     SET @sqlCommand = CONCAT('SELECT ', @limitClause, ' * FROM [${tableSchema}].[{{entityName}}] WHERE ', @whereClause, @orderByClause, @offsetClause)

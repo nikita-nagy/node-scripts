@@ -39,7 +39,7 @@ const spConfig = {
         filterCriteriaContent: `\t-- Filters by Brand_ID if Brand_ID is not null.
 \tIF @Brand_ID IS NOT NULL AND @Brand_ID <> ''
 \tBEGIN
-\t\tSET @whereClause = CONCAT(@whereClause, ' AND [User_ID] IN (SELECT [ID] FROM [JFW].[User] WHERE [Brand_ID] IN (SELECT tvalue FROM [JFW].[fn_Split](''', @Brand_ID, ''', DEFAULT))) ')
+\t\tSET @whereClause = CONCAT(@whereClause, ' AND [User_ID] IN (SELECT [ID] FROM [${tableSchema}].[User] WHERE [Brand_ID] IN (SELECT tvalue FROM [${tableSchema}].[fn_Split](''', @Brand_ID, ''', DEFAULT))) ')
 \tEND`,
         // For C# filter.
         propertyName: "BrandId",
@@ -73,7 +73,7 @@ const spConfig = {
         name: "External_Provider_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by External_Provider_ID if External_Provider_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteriaWithTableAlias]('User_ID', 'ExternalAuthenticationProviderUser', 'External_Authentication_Provider_ID', @External_Provider_ID, 'U'), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteriaWithTableAlias]('User_ID', 'ExternalAuthenticationProviderUser', 'External_Authentication_Provider_ID', @External_Provider_ID, 'U'), @newline)
 `,
         // For C# filter.
         propertyName: "ExternalProviderId",
@@ -83,7 +83,7 @@ const spConfig = {
         name: "External_User_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by External_User_ID if External_User_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteriaWithTableAlias]('User_ID', 'ExternalAuthenticationProviderUser', 'External_Authentication_User_ID', @External_User_ID, 'U'), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteriaWithTableAlias]('User_ID', 'ExternalAuthenticationProviderUser', 'External_Authentication_User_ID', @External_User_ID, 'U'), @newline)
 `,
         // For C# filter.
         propertyName: "ExternalUserId",
@@ -93,7 +93,7 @@ const spConfig = {
         name: "Role_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by Role_ID if Role_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteriaWithTableAlias]('User_ID', 'UserRole', 'Role_ID', @Role_ID, 'U'), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteriaWithTableAlias]('User_ID', 'UserRole', 'Role_ID', @Role_ID, 'U'), @newline)
   `,
         // For C# filter.
         propertyName: "RoleId",
@@ -111,7 +111,7 @@ const spConfig = {
         name: "Package_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by Package_ID if Package_ID is not null.
-  \tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteria]('Feature_ID', 'PackageFeature', 'Package_ID', @Package_ID), @newline)
+  \tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('Feature_ID', 'PackageFeature', 'Package_ID', @Package_ID), @newline)
   `,
         // For C# filter.
         propertyName: "PackageId",
@@ -129,7 +129,7 @@ const spConfig = {
         name: "Price_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by Price_ID if Price_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteria]('Package_ID', 'Price', 'ID', @Price_ID), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('Package_ID', 'Price', 'ID', @Price_ID), @newline)
   `,
         // For C# filter.
         propertyName: "PriceId",
@@ -147,7 +147,7 @@ const spConfig = {
         name: "User_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by User_ID if User_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteria]('Role_ID', 'UserRole', 'User_ID', @User_ID), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('Role_ID', 'UserRole', 'User_ID', @User_ID), @newline)
 `,
         // For C# filter.
         propertyName: "UserId",
@@ -157,7 +157,7 @@ const spConfig = {
         name: "Permission_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by Permission_ID if Permission_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteria]('Role_ID', 'RolePermission', 'Permission_ID', @Permission_ID), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('Role_ID', 'RolePermission', 'Permission_ID', @Permission_ID), @newline)
 `,
         // For C# filter.
         propertyName: "PermissionId",
@@ -175,7 +175,7 @@ const spConfig = {
         name: "Role_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by Role_ID if Role_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteria]('Permission_ID', 'RolePermission', 'Role_ID', @Role_ID), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('Permission_ID', 'RolePermission', 'Role_ID', @Role_ID), @newline)
   `,
         // For C# filter.
         propertyName: "RoleId",
@@ -193,7 +193,7 @@ const spConfig = {
         name: "User_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by User_ID if User_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteria]('Coupon_ID', 'CouponUser', 'User_ID', @User_ID), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('Coupon_ID', 'CouponUser', 'User_ID', @User_ID), @newline)
   `,
         // For C# filter.
         propertyName: "UserId",
@@ -211,7 +211,7 @@ const spConfig = {
         name: "User_ID",
         type: "VARCHAR(MAX)",
         filterCriteriaContent: `\t-- Filters by User_ID if User_ID is not null.
-\tSET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetForeignKeyFilterCriteria]('ExternalProvider_ID', 'UserExternalProvider', 'User_ID', @User_ID), @newline)
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('ExternalProvider_ID', 'UserExternalProvider', 'User_ID', @User_ID), @newline)
   `,
         // For C# filter.
         propertyName: "UserId",
