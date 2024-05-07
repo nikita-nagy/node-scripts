@@ -1,0 +1,5714 @@
+[
+  {
+    "TableName": "Address",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Country_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "State_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "City_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Address",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Postal_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Address",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "SMTP_Host",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "SMTP_Port",
+    "DefaultValue": null,
+    "DataType": "int",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "SMTP_Username",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 255,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "SMTP_Password",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 255,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Use_TLS",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "AppSettingSmtp",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Group_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 255,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Value",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 255,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Status",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BlackList",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Parent_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Brand",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Email_Support",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Email_Support_Title",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "System_Email",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "System_Email_Title",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Login_Notification_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Purchase_Notification_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Order_Notification_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Refund_Notification_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Chargeback_Notification_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Developer_Team_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Maintenance_Team_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "System_Admin_Notification_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "System_Admin_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Bcc_Notification_Emails",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandEmail",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Template_Type",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Group_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Link",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandLink",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Company_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Website",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Logo_URL",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Favicon_URL",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Title_Page",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandProfile",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Default_Package_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Default_SubscriptionType_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Smtp_Setting_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Product_Website",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Product_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Product_Alias",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Product_Prefix_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Website_CPanel",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Website_Admin_Tool",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Website_Admin_Tool_2",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Website_Admin_Tool_3",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Website_Protocol",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Domain_WhiteList",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 4000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Google_Analytics_Account",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Google_Account_Used_For_Google_Analytics",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Commission_Value",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Commission_Type",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Cdn_Url",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 255,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Cdn_Folder",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 255,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Bundle_Identifier",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Author_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "App_Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "App_Version",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Access_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "BrandSetting",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Object_Reference",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "MIME_Type",
+    "DefaultValue": "('application/octet-stream')",
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Relative_Path",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Original_Filename",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Notes",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Cdn",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "Country_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": true
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "State_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": true
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "City",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Group_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Value",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Configuration",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Region",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Subregion",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Code_Alpha_2",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Code_Alpha_3",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 3,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Code_Numeric",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Code_Phone",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Capital",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Currency",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 3,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Tld",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Native",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Country",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Coupon_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Coupon_Percent",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Quantity",
+    "DefaultValue": null,
+    "DataType": "int",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Start_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "End_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Auto_Apply_To_Price",
+    "DefaultValue": null,
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Coupon",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "CouponUser",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "CouponUser",
+    "ColumnName": "Coupon_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "CouponUser",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "CouponUser",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "CouponUser",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "CouponUser",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "CouponUser",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Name_Plural",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Symbol",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Symbol_Native",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 10,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Decimal_Digits",
+    "DefaultValue": "((2))",
+    "DataType": "int",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Rounding",
+    "DefaultValue": "((0.00))",
+    "DataType": "decimal",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Currency",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Parent_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Referral_Code",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 10,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Token",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Session",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Is_Mobile",
+    "DefaultValue": null,
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Is_Default",
+    "DefaultValue": null,
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Device",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "Device_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "Device_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "Phone_Number",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "OS_Device",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "App_Version_Number",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "ICCID",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "IMSI",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "IMEI",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "SimCard_Info",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceProfile",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "Device_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "Country_Code",
+    "DefaultValue": "('US')",
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "Language_Code",
+    "DefaultValue": "('en-US')",
+    "DataType": "varchar",
+    "MaxLength": 15,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "TimeZone_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "DeviceSetting",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "From_Currency_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "To_Currency_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "Rate",
+    "DefaultValue": null,
+    "DataType": "decimal",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "Time_Last_Update",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExchangeRate",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Client_ID",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 200,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Client_Secret",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 200,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Redirect_Uri",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Scope",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Auth_Endpoint",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Token_Endpoint",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Icon_Url",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProvider",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "External_Authentication_Provider_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "External_Authentication_User_ID",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "ExternalAuthenticationProviderUser",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 255,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 255,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Private_Notes",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Status",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Feature",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Group_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Parent_HelpDesk_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDesk",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Parent_HelpDesk_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "HelpDesk_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Priority",
+    "DefaultValue": null,
+    "DataType": "tinyint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Feedback_Content",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "HelpDeskFeedback",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Country_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 15,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Native_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Language",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Package_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "SubscriptionType_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "License_Key",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 30,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Source_ID",
+    "DefaultValue": null,
+    "DataType": "tinyint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Ref_License",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 30,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 255,
+    "IsNullable": true
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Start_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "End_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Used_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Used_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "License",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "LOG4NET",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "LOG4NET",
+    "ColumnName": "DATE",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "LOG4NET",
+    "ColumnName": "THREAD",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 255,
+    "IsNullable": false
+  },
+  {
+    "TableName": "LOG4NET",
+    "ColumnName": "LEVEL",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 255,
+    "IsNullable": false
+  },
+  {
+    "TableName": "LOG4NET",
+    "ColumnName": "LOGGER",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 255,
+    "IsNullable": false
+  },
+  {
+    "TableName": "LOG4NET",
+    "ColumnName": "MESSAGE",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 4000,
+    "IsNullable": false
+  },
+  {
+    "TableName": "LOG4NET",
+    "ColumnName": "EXCEPTION",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 4000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Package",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "Package_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "Feature_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "Feature_Values",
+    "DefaultValue": null,
+    "DataType": "int",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PackageFeature",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Payment_Method_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Price_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Coupon_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Payment_Type",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Payment_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Completed_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Invoice_No",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Currency_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Amount",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Amount_Fee",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Merchant_Ref_No",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Merchant_Account_Buyer",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Merchant_Account_Seller",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "IP_Address",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Notes",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Referral_User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Commision",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Shared_Amount",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Risk_Mark",
+    "DefaultValue": null,
+    "DataType": "tinyint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Payment",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Payment_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Payment_History_Type",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Amount",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Notes",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentHistory",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Payment_Provider_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Payment_Info",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Ipn_Listener_Link",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Cancel_Link_Without_Login",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Cancel_Link",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Return_Link",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Public_Key",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Private_Key",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Interal_Note",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentMethod",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Merchant_Type",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Website",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "PaymentProvider",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Permission",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Point",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Point",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Point",
+    "ColumnName": "Balance",
+    "DefaultValue": "((0))",
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Point",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Point",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Point",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Point",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Payment_Method_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Package_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Subscription_Type_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Amount",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Currency",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 3,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Checkout_Link",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Price",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Role",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "RolePermission",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "RolePermission",
+    "ColumnName": "Role_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "RolePermission",
+    "ColumnName": "Permission_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "RolePermission",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "RolePermission",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "RolePermission",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "RolePermission",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Country_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": false
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": false
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": false
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Administrative_Division",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "State",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": false
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Number_Of_Days",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Is_Default",
+    "DefaultValue": null,
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "SubscriptionType",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Country_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Value",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Identifier",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TimeZone",
+    "ColumnName": "Created_Date",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "User_ID",
+    "DefaultValue": "((0))",
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Device_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "TrackingEvent_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "URL",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "IP_Address",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "OS",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Browser_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Browser_Version",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Request_From_Mobile",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "User_Agent",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Location",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 250,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Latitude",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Longitude",
+    "DefaultValue": null,
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingActivity",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Country_Code",
+    "DefaultValue": "('US')",
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Language_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 10,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Tracking_Event_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Subject",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Email_Content",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEmailPattern",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Group_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 2048,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Tracking_Level",
+    "DefaultValue": "((1000))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "ZOrder",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingEvent",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "TrackingEvent_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Country_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 2,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Language_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 15,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Notification_Type",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Notification_Channel_Type",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Email_From",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 1000,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Email_To",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Email_CC",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Email_BCC",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Email_Subject",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 1024,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Email_Body",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Sent_Time",
+    "DefaultValue": null,
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Status",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotification",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "TrackingNotification_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "Status",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "TrackingNotificationRead",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "GUID",
+    "DefaultValue": "(newid())",
+    "DataType": "uniqueidentifier",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Brand_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Parent_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 100,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Username",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Password",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Passphrase",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 6,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "User_Type",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Is_Email_Address_Verified",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Is_User_Verified",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Is_System",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Risk_Mark",
+    "DefaultValue": "((0))",
+    "DataType": "tinyint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Status",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "User",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "First_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Last_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Nick_Name",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Avatar",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 500,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Email_Address",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "PhoneNumber1",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "PhoneNumber2",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "PhoneNumber3",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 20,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Website",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": 200,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Bio",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserProfile",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserRole",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserRole",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserRole",
+    "ColumnName": "Role_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserRole",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserRole",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserRole",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserRole",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Package_ID",
+    "DefaultValue": "((1))",
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Language_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 15,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "TimeZone_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Tracking_Level",
+    "DefaultValue": "((1000))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Expiry_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Theme_Style",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 50,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Referral_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 10,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Commission",
+    "DefaultValue": "((0))",
+    "DataType": "float",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Waiting_Period",
+    "DefaultValue": "((14))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Enable_Sign_In_Detection",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "UserSetting",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "User_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Currency_Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 5,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Balance",
+    "DefaultValue": "((0))",
+    "DataType": "decimal",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Status",
+    "DefaultValue": null,
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Is_Default",
+    "DefaultValue": "((0))",
+    "DataType": "bit",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "Wallet",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "TrackingEvent_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Code",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Name",
+    "DefaultValue": null,
+    "DataType": "varchar",
+    "MaxLength": 150,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Description",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Amount",
+    "DefaultValue": "((1))",
+    "DataType": "decimal",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Status",
+    "DefaultValue": "((1))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletEarningEvent",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Wallet_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "WalletEarningEvent_ID",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Reference",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Amount",
+    "DefaultValue": null,
+    "DataType": "decimal",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Notes",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Tags",
+    "DefaultValue": null,
+    "DataType": "nvarchar",
+    "MaxLength": -1,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Status",
+    "DefaultValue": "((0))",
+    "DataType": "smallint",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Modified_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Modified_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Created_By",
+    "DefaultValue": null,
+    "DataType": "bigint",
+    "MaxLength": null,
+    "IsNullable": true
+  },
+  {
+    "TableName": "WalletHistory",
+    "ColumnName": "Created_Date",
+    "DefaultValue": "(getutcdate())",
+    "DataType": "datetime",
+    "MaxLength": null,
+    "IsNullable": false
+  }
+]

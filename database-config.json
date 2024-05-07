@@ -1,0 +1,11 @@
+{
+  "server": {
+    "server": "localhost",
+    "database": "jfw_dev_x",
+    "user": "sa",
+    "password": "123456",
+    "options": {
+      "encrypt": false
+    }
+  }
+}

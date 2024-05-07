@@ -1,0 +1,8 @@
+node "clean-output.js"
+node "generate-core-models.js"
+node "generate-daos.js"
+node "generate-entities.js"
+node "generate-filters.js"
+node "generate-repository.js"
+node "generate-template.js"
+node "copy-files-to-framework.js"
