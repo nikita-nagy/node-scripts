@@ -1,8 +1,68 @@
-const { includedEntityList, excludedEntityList } = require("./config-list");
+const fs = require("fs");
+const localFilePath = "./config.local.js";
 
-const databaseConfig = require("./config.database.json");
+let databaseConfig = require("./config.database.json");
+let tableSchema = "JFW";
 
-const tableSchema = "JFW";
+/* Table names to include in the generation */
+let includedEntityList = [];
+let excludedEntityList = ["LOG4NET"];
+
+/* Available template suffixes - (EntityClasses)
+ * - .Constants
+ * - .
+ * - .Exceptions
+ * - .Errors
+ * - .Overrides
+ * - .Validations
+ */
+let includedCoreSuffixList = [];
+let excludedCoreSuffixList = [];
+const configToggles = {
+  shouldGenerateDataAccess: true,
+  shouldGenerateRepository: true,
+  shouldGenerateCoreModels: true,
+  shouldGenerateEntityClasses: true,
+  shouldGenerateEntityModels: true,
+  shouldGenerateMemoryClasses: false,
+};
+
+if (fs.existsSync(localFilePath)) {
+  const localConfig = require(localFilePath);
+
+  // Override default values
+  if (localConfig.database) {
+    databaseConfig = localConfig.database;
+  }
+
+  if (localConfig.tableSchema) {
+    tableSchema = localConfig.tableSchema;
+  }
+
+  if (localConfig.includedEntityList) {
+    includedEntityList = localConfig.includedEntityList;
+  }
+
+  if (localConfig.excludedEntityList) {
+    excludedEntityList = localConfig.excludedEntityList;
+  }
+
+  if (localConfig.includedCoreSuffixList) {
+    includedCoreSuffixList = localConfig.includedCoreSuffixList;
+  }
+
+  if (localConfig.excludedCoreSuffixList) {
+    excludedCoreSuffixList = localConfig.excludedCoreSuffixList;
+  }
+
+  if (localConfig.toggles) {
+    for (const key in localConfig.toggles) {
+      configToggles[key] = localConfig.toggles[key];
+    }
+  }
+
+  console.log("Local configuration loaded.");
+}
 
 // SQL Server data types to C# data types
 const sqlDataTypeMapping = {
@@ -104,5 +164,8 @@ module.exports = {
   sqlDataTypeMapping,
   includedEntityList,
   excludedEntityList,
+  includedCoreSuffixList,
+  excludedCoreSuffixList,
   tableDictionaryPath,
+  configToggles,
 };
