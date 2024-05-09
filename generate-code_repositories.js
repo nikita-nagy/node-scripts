@@ -1,3 +1,9 @@
+const config = require("./config");
+
+if (!config.configToggles.enableRepositoryGeneration) {
+  return;
+}
+
 const {
   saveTextToFile,
   replaceTemplate,

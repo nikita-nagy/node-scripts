@@ -1,3 +1,9 @@
+const config = require("./config");
+
+if (!config.configToggles.enableEntityModelGeneration) {
+  return;
+}
+
 const {
   saveTextToFile,
   replaceTemplate,

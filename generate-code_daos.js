@@ -1,3 +1,9 @@
+const config = require("./config");
+
+if (!config.configToggles.enableDataAccessGeneration) {
+  return;
+}
+
 const {
   saveTextToFile,
   replaceTemplate,

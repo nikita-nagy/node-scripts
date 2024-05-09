@@ -1,3 +1,9 @@
+const config = require("./config");
+
+if (!config?.configToggles?.enableFilterGeneration) {
+  return;
+}
+
 const {
   saveTextToFile,
   replaceTemplate,
@@ -48,16 +54,22 @@ const generateFilters = (tableName, tableData) => {
         break;
       case "UID":
         column.dataTypeDotNet = "string";
-        const uidListSetterContent = replaceTemplate(definitions.ListSetterGuid, {
-          columnNamePascal: column.namePascal,
-        });
-        const uidSetterContent = replaceTemplate(definitions.SetterGuidInterface, {
-          columnNamePascal: column.namePascal,
-        });
+        const uidListSetterContent = replaceTemplate(
+          definitions.ListSetterGuid,
+          {
+            columnNamePascal: column.namePascal,
+          }
+        );
+        const uidSetterContent = replaceTemplate(
+          definitions.SetterGuidInterface,
+          {
+            columnNamePascal: column.namePascal,
+          }
+        );
 
         listSetters.push(uidListSetterContent);
         setterDefinitions.push(uidSetterContent);
-        
+
         break;
       default:
         if (column.name.includes("_ID")) {

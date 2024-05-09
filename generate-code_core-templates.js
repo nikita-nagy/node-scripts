@@ -1,3 +1,5 @@
+const config = require("./config");
+
 const {
   saveTextToFile,
   replaceTemplate,
@@ -255,11 +257,17 @@ const generateMemoryClassTemplate = (className) => {
 };
 
 walkthroughTableData(tables, (tableName) => {
-  generateTemplate(tableName);
-  generateImplementTemplate(tableName, tables[tableName]);
+  if (config.configToggles.enableCoreTemplateGeneration) {
+    generateTemplate(tableName);
+  }
+  if (config.configToggles.enableCoreImplementationGeneration) {
+    generateImplementTemplate(tableName, tables[tableName]);
+  }
 });
 
 // For Memory Classes
-for (const className of memoryClasses) {
-  // generateMemoryClassTemplate(className);
+if (config.configToggles.enableMemoryClassGeneration) {
+  for (const className of memoryClasses) {
+    generateMemoryClassTemplate(className);
+  }
 }

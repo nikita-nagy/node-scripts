@@ -19,12 +19,14 @@ let excludedEntityList = ["LOG4NET"];
 let includedCoreSuffixList = [];
 let excludedCoreSuffixList = [];
 const configToggles = {
-  shouldGenerateDataAccess: true,
-  shouldGenerateRepository: true,
-  shouldGenerateCoreModels: true,
-  shouldGenerateEntityClasses: true,
-  shouldGenerateEntityModels: true,
-  shouldGenerateMemoryClasses: false,
+  enableDataAccessGeneration: true,
+  enableRepositoryGeneration: true,
+  enableCoreModelGeneration: true,
+  enableCoreTemplateGeneration: true,
+  enableCoreImplementationGeneration: true,
+  enableFilterGeneration: true,
+  enableEntityModelGeneration: true,
+  enableMemoryClassGeneration: false,
 };
 
 if (fs.existsSync(localFilePath)) {

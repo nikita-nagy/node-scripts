@@ -1,3 +1,10 @@
+const config = require("./config");
+
+if (!config.configToggles.enableCoreModelGeneration) {
+  console.log("Core Models generation is turned off. Exiting script.");
+  return;
+}
+
 const {
   saveTextToFile,
   replaceTemplate,
