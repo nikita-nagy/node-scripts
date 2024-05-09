@@ -1,7 +1,7 @@
 {
   "server": {
     "server": "localhost",
-    "database": "jfw_dev_x",
+    "database": "jfw_dev",
     "user": "sa",
     "password": "123456",
     "options": {

@@ -1,6 +1,6 @@
 const { includedEntityList, excludedEntityList } = require("./config-list");
 
-const databaseConfig = require("./database-config.json");
+const databaseConfig = require("./config.database.json");
 
 const tableSchema = "JFW";
 
@@ -59,6 +59,7 @@ const tableDictionaryPath = {
   DeviceSetting: "device",
   ExternalAuthenticationProvider: "system-configuration",
   ExternalAuthenticationProviderUser: "system-configuration",
+  ExchangeRate: "system-configuration",
   Feature: "pricing",
   HelpDesk: "tracking",
   HelpDeskFeedback: "tracking",
@@ -87,6 +88,8 @@ const tableDictionaryPath = {
   TrackingEmailPattern: "tracking",
   TrackingEmailRead: "tracking",
   TrackingEvent: "tracking",
+  TrackingNotification: "tracking",
+  TrackingNotificationRead: "tracking",
   User: "user",
   UserAddress: "user",
   UserProfile: "user",
