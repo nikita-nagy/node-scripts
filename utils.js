@@ -1,6 +1,6 @@
 const fs = require("fs");
 const axios = require("axios");
-const { includedEntityList, excludedEntityList } = require("./config");
+const config = require("./config");
 
 /*
 Description: Common functions for the code generator
@@ -99,13 +99,16 @@ const walkthroughTableData = (tableData, callback) => {
   for (const tableName in tableData) {
     // Skips the table if it is not included in the list.
     if (
-      includedEntityList.length > 0 &&
-      !includedEntityList.includes(tableName)
+      config.includedEntityList.length > 0 &&
+      !config.includedEntityList.includes(tableName)
     )
       continue;
 
     // Skips the table if it is excluded in the list.
-    if (excludedEntityList.length > 0 && excludedEntityList.includes(tableName))
+    if (
+      config.excludedEntityList.length > 0 &&
+      config.excludedEntityList.includes(tableName)
+    )
       continue;
 
     // Calls the callback function
