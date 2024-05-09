@@ -21,15 +21,21 @@ const getStoredProcedureContent = (tableName, tableData) => {
     let dataType = column.dataTypeSqlWithLength.toUpperCase();
     switch (column.name) {
       case "ID":
-      case "UID":
       case "Modified_By":
       case "Modified_Date":
       case "Created_By":
       case "Created_Date":
         return;
+      case "Is_Default":
+      case "Is_System":
+        defaultValue = " = 0";
+        break;
       default:
-        if (column.defaultValue && column.defaultValue != null)
-          defaultValue = ` = ${column.defaultValue}`;
+        if (column.defaultValue && column.defaultValue != null) {
+          if (dataType.toUpperCase() === "BIT")
+            defaultValue = ` = ${column.defaultValue === true ? 1 : 0}`;
+          else defaultValue = ` = ${column.defaultValue}`;
+        }
 
         if (column.isNullable && defaultValue == "") defaultValue = " = NULL";
         break;

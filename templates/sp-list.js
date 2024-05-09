@@ -48,9 +48,9 @@ BEGIN
     SET NOCOUNT ON;
 
     DECLARE @newLine nvarchar(2) = CHAR(13) + CHAR(10)
-    DECLARE @limitClause nvarchar(max) = [JFW].[fn_GetLimitClause](@Limit)
-    DECLARE @offsetClause nvarchar(max) = [JFW].[fn_GetOffsetClause](@Page_Number, @Page_Size)
-    DECLARE @orderByClause nvarchar(max) = [JFW].[fn_GetOrderByClause](@Sort_Data_Field, @Sort_Order)
+    DECLARE @limitClause nvarchar(max) = [${tableSchema}].[fn_GetLimitClause](@Limit)
+    DECLARE @offsetClause nvarchar(max) = [${tableSchema}].[fn_GetOffsetClause](@Page_Number, @Page_Size)
+    DECLARE @orderByClause nvarchar(max) = [${tableSchema}].[fn_GetOrderByClause](@Sort_Data_Field, @Sort_Order)
     DECLARE @whereClause nvarchar(max) = CONCAT('1 = 1', @newLine)
     DECLARE @sqlCommand nvarchar(max) = ''
 
@@ -58,10 +58,10 @@ BEGIN
 {{FilterCriterias}}
 
     -- Sets common filter criterias
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteria]('Modified_By', @Modified_By), @newLine)
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteriaByDateRange]('Modified_Date', @Modified_Date_From, @Modified_Date_To), @newLine)
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteria]('Created_By', @Created_By), @newLine)
-    SET @whereClause = CONCAT(@whereClause, [JFW].[fn_GetFilterCriteriaByDateRange]('Created_Date', @Created_Date_From, @Created_Date_To), @newLine)
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteria]('Modified_By', @Modified_By), @newLine)
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteriaByDateRange]('Modified_Date', @Modified_Date_From, @Modified_Date_To), @newLine)
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteria]('Created_By', @Created_By), @newLine)
+    SET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetFilterCriteriaByDateRange]('Created_Date', @Created_Date_From, @Created_Date_To), @newLine)
 
     -- print @whereClause
     -- Disables the limit clause if the offset clause is set.
