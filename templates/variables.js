@@ -1,6 +1,6 @@
 const author = `jin.jackson`;
 const authorFullName = `Jin Jackson`;
-const authorDevCode = `dev22`;
+const authorDevCode = `dev2103`;
 const now = new Date();
 const year = now.getUTCFullYear();
 const month = now.getUTCMonth() + 1; // months are zero-indexed, so add 1
@@ -49,9 +49,8 @@ const outputPaths = {
   },
 };
 
-const currentDate = `${year}-${month.toString().padStart(2, "0")}-${day
-  .toString()
-  .padStart(2, "0")}`;
+const padding = (value, length = 2) => value.toString().padStart(length, "0");
+const currentDate = `${year}-${padding(month)}-${padding(day)}`;
 
 module.exports = {
   author,
