@@ -47,7 +47,7 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    DECLARE @newLine nvarchar(2) = CHAR(13) + CHAR(10)
+    DECLARE @newLine nvarchar(2) = ' '
     DECLARE @limitClause nvarchar(max) = [${tableSchema}].[fn_GetLimitClause](@Limit)
     DECLARE @offsetClause nvarchar(max) = [${tableSchema}].[fn_GetOffsetClause](@Page_Number, @Page_Size)
     DECLARE @orderByClause nvarchar(max) = [${tableSchema}].[fn_GetOrderByClause](@Sort_Data_Field, @Sort_Order)
@@ -72,7 +72,7 @@ BEGIN
 
     -- Sets the select SQL statement
     SET @sqlCommand = CONCAT('SELECT ', @limitClause, ' * FROM [${tableSchema}].[{{entityName}}] WHERE ', @whereClause, @orderByClause, @offsetClause)
-    
+
     -- Executes the SQL statement
     EXEC sp_executesql @sqlCommand
 

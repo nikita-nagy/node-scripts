@@ -62,7 +62,7 @@ BEGIN
 {{PreExecutionStatements}}
     SET NOCOUNT ON;
 
-    DECLARE @newLine nvarchar(2) = CHAR(13) + CHAR(10)
+    DECLARE @newLine nvarchar(2) = ' '
     DECLARE @limitClause nvarchar(max) = [${tableSchema}].[fn_GetLimitClause](@Limit)
     DECLARE @offsetClause nvarchar(max) = [${tableSchema}].[fn_GetOffsetClause](@Page_Number, @Page_Size)
     DECLARE @orderByClause nvarchar(max) = [${tableSchema}].[fn_GetOrderByClauseWithTableAlias](@Sort_Data_Field, @Sort_Order, '{{entityAlias}}')
