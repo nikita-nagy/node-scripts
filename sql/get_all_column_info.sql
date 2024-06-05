@@ -4,6 +4,8 @@ SELECT
     ic.COLUMN_DEFAULT AS 'DefaultValue',
     ty.name AS 'DataType',
     ic.CHARACTER_MAXIMUM_LENGTH AS 'MaxLength',
+    ic.NUMERIC_PRECISION AS 'Precision',
+    ic.NUMERIC_SCALE AS 'Scale',
     c.is_nullable AS 'IsNullable'
 FROM
     sys.tables t

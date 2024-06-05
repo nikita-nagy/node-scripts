@@ -40,13 +40,22 @@ const processProcedureInfo = (procedureInfo) => {
   console.log("Procedure parameter info written to file.");
 };
 
-const toDataTypeSqlWithLength = (dataType, maxLength) => {
+const toDataTypeSqlWithLength = (dataType, maxLength, precision, scale) => {
   switch (dataType) {
     case "nvarchar":
     case "varchar":
     case "char":
     case "nchar":
-      return `${dataType}(${maxLength < 0 ? "MAX" : maxLength})`;
+      if (maxLength < 0) {
+        return `${dataType}(MAX)`;
+      }
+      return `${dataType}(${maxLength})`;
+    case "decimal":
+    case "numeric":
+      if (precision && scale) {
+        return `${dataType}(${precision}, ${scale})`;
+      }
+      return `${dataType}`;
     default:
       return dataType;
   }
@@ -60,13 +69,27 @@ const processResultData = (tableInfo, procedureInfo) => {
   const tables = tableInfo.reduce(
     (
       acc,
-      { TableName, ColumnName, DataType, IsNullable, MaxLength, DefaultValue }
+      {
+        TableName,
+        ColumnName,
+        DataType,
+        IsNullable,
+        MaxLength,
+        Precision,
+        Scale,
+        DefaultValue,
+      }
     ) => {
       let dotNetType = sqlDataTypeMapping[DataType];
       // We need to convert the column name to camel case from snake case
       let columnNameCamelCase = _.camelCase(ColumnName.replace("_iOS", "iO_s"));
       let columnNamePascalCase = _.upperFirst(columnNameCamelCase);
-      let dataTypeSqlWithLength = toDataTypeSqlWithLength(DataType, MaxLength);
+      let dataTypeSqlWithLength = toDataTypeSqlWithLength(
+        DataType,
+        MaxLength,
+        Precision,
+        Scale
+      );
       let defaultValue = DefaultValue?.replace(/[()]/g, "") ?? DefaultValue;
 
       if (dotNetType == "bool") {
@@ -183,7 +206,15 @@ const processResultData = (tableInfo, procedureInfo) => {
   const resultData = procedureInfo.reduce(
     (
       acc,
-      { ProcedureName, ParameterName, DataType, MaxLength, DefaultValue }
+      {
+        ProcedureName,
+        ParameterName,
+        DataType,
+        MaxLength,
+        Precision,
+        Scale,
+        DefaultValue,
+      }
     ) => {
       let dotNetType = sqlDataTypeMapping[DataType];
       let procedureNameParts = ProcedureName.split("_");
@@ -206,7 +237,7 @@ const processResultData = (tableInfo, procedureInfo) => {
         }
       }
 
-      let dataTypeSqlWithLength = toDataTypeSqlWithLength(DataType, MaxLength);
+      let dataTypeSqlWithLength = toDataTypeSqlWithLength(DataType, MaxLength, Precision, Scale);
       let currentParameter = {
         name: ParameterName,
         nameCamel: parameterCamelCase,
