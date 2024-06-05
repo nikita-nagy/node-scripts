@@ -99,6 +99,26 @@ const spConfig = {
         propertyName: "RoleId",
         propertyType: "string",
       },
+      sameOrganizationWithUserId: {
+        // SELECT * FROM [JFW].[User] U WHERE U.[ID] IN (
+        //   SELECT DISTINCT [User_ID]
+        //   FROM [JFW].[OrganizationUser] OU
+        //   WHERE OU.[Organization_ID] IN (SELECT O.[ID]
+        //     FROM [JFW].[Organization] O
+        //     -- Need to join with the [JFW].[OrganizationUser] table to get the organization ID.
+        //     JOIN [JFW].[OrganizationUser] OU ON O.[ID] = OU.[Organization_ID]
+        //     WHERE OU.[Status] = 1 AND OU.[User_ID] = 2))
+        name: "Same_Organization_With_User_ID",
+        type: "BIGINT",
+        filterCriteriaContent: `\t-- Filters by Same_Organization_With_User_ID if Same_Organization_With_User_ID is not null.
+\tIF @Same_Organization_With_User_ID IS NOT NULL AND @Same_Organization_With_User_ID <> 0
+\tBEGIN
+\tSET @whereClause = CONCAT(@whereClause, ' AND U.[ID] IN (SELECT DISTINCT OU.[User_ID] FROM [${tableSchema}].[OrganizationUser] OU WHERE OU.[Organization_ID] IN (SELECT O.[ID] FROM [${tableSchema}].[Organization] O JOIN [${tableSchema}].[OrganizationUser] OU ON O.[ID] = OU.[Organization_ID] WHERE OU.[Status] = 1 AND OU.[User_ID] = ', @Same_Organization_With_User_ID, ')) ', @newline)
+\tEND`,
+        // For C# filter.
+        propertyName: "SameOrganizationWithUserId",
+        propertyType: "long?",
+      },
     },
   },
   Feature: {
@@ -213,6 +233,58 @@ const spConfig = {
         filterCriteriaContent: `\t-- Filters by User_ID if User_ID is not null.
 \tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('ExternalProvider_ID', 'UserExternalProvider', 'User_ID', @User_ID), @newline)
   `,
+        // For C# filter.
+        propertyName: "UserId",
+        propertyType: "string",
+      },
+    },
+  },
+  Issue: {
+    alias: {
+      Issue: "I",
+    },
+    childTables: [],
+    customParameters: {
+      onlyParent: {
+        name: "Only_Parent",
+        type: "BIT",
+        filterCriteriaContent: `\t-- [SP Custom] Filters by Only_Parent if Only_Parent is not null.
+\tIF (@Only_Parent IS NULL OR @Only_Parent = 1) AND @Parent_ID IS NULL
+\tBEGIN
+\tSET @whereClause = CONCAT(@whereClause, ' AND [Parent_ID] IS NULL ', @newline)
+\tEND
+`,
+        // For C# filter.
+        propertyName: "OnlyParent",
+        propertyType: "bool?",
+      },
+      userId: {
+        name: "User_ID",
+        type: "VARCHAR(MAX)",
+        filterCriteriaContent: `\t-- [SP Custom] Filters by User_ID if User_ID is not null. We search on Modified_By and Created_By for User_ID.
+\tIF @User_ID IS NOT NULL AND @User_ID <> ''
+\tBEGIN
+\tSET @whereClause = CONCAT(@whereClause, ' AND [Created_By] IN (SELECT tvalue FROM [JFW].[fn_Split](''', @User_ID, ''', DEFAULT)) ', @newline)
+\tEND
+`,
+        // For C# filter.
+        propertyName: "UserId",
+        propertyType: "string",
+      },
+    },
+  },
+  Organization: {
+    alias: {
+      Organization: "O",
+    },
+    childTables: [],
+    customParameters: {
+      userId: {
+        name: "User_ID",
+        type: "VARCHAR(MAX)",
+        filterCriteriaContent: `\t-- Filters by User_ID if User_ID is not null.
+\tSET @whereClause = CONCAT(@whereClause, [${tableSchema}].[fn_GetForeignKeyFilterCriteria]('Organization_ID', 'OrganizationUser', 'User_ID', @User_ID), @newline)
+`,
         // For C# filter.
         propertyName: "UserId",
         propertyType: "string",

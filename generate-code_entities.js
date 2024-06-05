@@ -126,7 +126,7 @@ const generateEntities = (tableName, tableData) => {
     }
 
     let columnType = column.dataTypeDotNet;
-    if (!columnType.includes("?") && column.dataTypeDotNet !== "string") {
+    if (!columnType?.includes("?") && column.dataTypeDotNet !== "string") {
       columnType += "?";
     }
 
@@ -259,7 +259,7 @@ const generateEntities = (tableName, tableData) => {
         toLower = ".ToLower()";
         break;
       default:
-        if (!columnType.includes("?") && column.dataTypeDotNet !== "string") {
+        if (!columnType?.includes("?") && column.dataTypeDotNet !== "string") {
           columnType += "?";
           break;
         }

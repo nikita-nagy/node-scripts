@@ -6,7 +6,7 @@ let tableSchema = "JFW";
 
 /* Table names to include in the generation */
 let includedEntityList = [];
-let excludedEntityList = ["LOG4NET"];
+let excludedEntityList = ["LOG4NET", "sysdiagrams"];
 
 /* Available template suffixes - (EntityClasses)
  * - .Constants
@@ -131,6 +131,8 @@ const tableDictionaryPath = {
   IssueType: "tracking",
   Language: "system-definition",
   License: "license",
+  Organization: "organization",
+  OrganizationUser: "organization",
   Package: "pricing",
   PackageFeature: "",
   Payment: "payment",

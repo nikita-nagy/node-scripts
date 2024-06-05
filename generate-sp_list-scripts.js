@@ -23,7 +23,9 @@ const getStoredProcedureContent = (tableName, tableData) => {
       dataType,
     });
 
-    definitionParameters.push(definitionParameterContent);
+    if (!definitionParameters.includes(definitionParameterContent)) {
+      definitionParameters.push(definitionParameterContent);
+    }
   };
 
   const addFilterCriteriaContent = (columnName, template) => {
